@@ -1,33 +1,15 @@
-static-base
-========
-Foundation for a static site built on Jekyll & Grunt. 
+Static Site
+============
 
-__Requirements:__ Node & Ruby.
 
-###To get started, clone the project:
+##Setup:##
+1. `$ git clone https://github.com/we-are-altitude/static-base.git`
+3. `$ bundle install`
 
-```
-$ git clone https://github.com/twanlass/static-base.git
-```
+##Launch A Local Server:##
+`$ jekyll server --config _config.yml,_config-local.yml`
 
-###Install dependencies:
+Then simply go to http://localhost:4000
 
-``` 
-$ bundle install
-$ npm install
-```
-###Launch the site (and a server):
-
-```
-$ grunt server
-```
-
-###To build the site for deployment (order is important):
-
-```
-$ grunt build
-$ jekyll build
-```
-
-###Deploy built assets:
-Final assets will be located in the 'Dist' folder ready for deployment to any FTP, Amazon S3 or similar.
+##Build:##
+ `$ jekyll build --config _config.yml,_config-$['env'].yml`

@@ -1,4 +1,7 @@
-source: 'app'
-exclude: [fonts, images, '404', bower_components, assets, 'robots.txt', 'favicon.ico']
-keep_files: [fonts, images, '404', bower_components, assets, 'robots.txt', 'favicon.ico']
-destination: 'dist'
+exclude: ['Gemfile', 'Gemfile.lock', 'config.ru', 'README.md', 'Procfile', 'vendor', 'gems']
+destination: 'public'
+
+# Default Jekyll Config
+relative_permalinks: true
+permalink: pretty
+permalink: /blog/:title

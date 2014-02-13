@@ -1,0 +1,11 @@
+# Custom Site Config
+env: production
+cdn: # add cloudfront url
+
+# Jekyll Asset Pipeline Config
+asset_pipeline:
+    bundle: true            
+    compress: true          
+    output_path: assets     
+    display_path: # add production url
+    gzip: false             
